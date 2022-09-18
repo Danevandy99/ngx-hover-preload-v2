@@ -1,5 +1,7 @@
 # ngx-hover-preload-v2
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8177632d-80d8-4a1b-b0fd-30019fa5ec66/deploy-status)](https://app.netlify.com/sites/ngx-hover-preload-v2/deploys)
+
 *Based on [ngx-hover-preload](https://www.npmjs.com/package/ngx-hover-preload)*
 
 ---
@@ -12,6 +14,8 @@ This package exports:
 ## Example
 
 [Example code available here](https://github.com/Danevandy99/ngx-hover-preload-v2/tree/main/src).
+
+[Example running here](https://ngx-hover-preload-v2.netlify.app/)
 
 ## Usage
 

@@ -2,6 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8177632d-80d8-4a1b-b0fd-30019fa5ec66/deploy-status)](https://app.netlify.com/sites/ngx-hover-preload-v2/deploys)
 
+[![Npm package version](https://badgen.net/npm/v/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
+[![Npm package total downloads](https://badgen.net/npm/dt/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
+[![Npm package license](https://badgen.net/npm/license/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
+
+[![GitHub latest commit](https://badgen.net/github/last-commit/Danevandy99/ngx-hover-preload-v2/main)](https://GitHub.com/Naereen/StrapDown.js/main/)
+
 *Based on [ngx-hover-preload](https://www.npmjs.com/package/ngx-hover-preload)*
 
 ---

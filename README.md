@@ -1,27 +1,57 @@
-# NgxHoverPreload2Demo
+# ngx-hover-preload-v2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+*Based on [ngx-hover-preload](https://www.npmjs.com/package/ngx-hover-preload)*
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This package exports:
 
-## Code scaffolding
+1. `PreloadingStrategy`, which will preload a lazy-loaded route on mouse over a corresponding router link.
+2. `PreloadOnDemandService`, which can be used to directly load a module that contains a given route path.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Example
 
-## Build
+[Example code available here](https://github.com/Danevandy99/ngx-hover-preload-v2/tree/main/src).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+1. Install the package:
+```
+npm install --save ngx-hover-preload-v2
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Import the `HoverPreloadModule` into your `AppModule` **AND** your lazy-loaded modules to ensure the link hover directive is available:
 
-## Running end-to-end tests
+```ts
+// ...
+import { HoverPreloadModule } from 'ngx-hover-preload-v2';
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+@NgModule({
+  declarations: [
+    // ...
+  ],
+  imports: [
+    // ...
+    HoverPreloadModule
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Further help
+3. Set your `RouteModule` preload strategy to `HoverPreloadStrategy`:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```ts
+// ...
+import { HoverPreloadStrategy } from 'ngx-hover-preload-v2';
+
+@NgModule({
+  // ...
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: HoverPreloadStrategy })],
+})
+export class AppModule {} // or AppRoutingModule
+```
+
+## License
+
+MIT

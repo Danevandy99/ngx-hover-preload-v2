@@ -1,5 +1,9 @@
 # ngx-hover-preload-v2
 
+*Based on [ngx-hover-preload](https://www.npmjs.com/package/ngx-hover-preload)*
+
+---
+
 This package exports:
 
 1. `PreloadingStrategy`, which will preload a lazy-loaded route on mouse over a corresponding router link.
@@ -7,20 +11,20 @@ This package exports:
 
 ## Example
 
-Example is available [here](https://github.com/mgechev/ngx-hover-preload/tree/master/src).
+[Example code available here](https://github.com/Danevandy99/ngx-hover-preload-v2/tree/main/src).
 
 ## Usage
 
-Install the package:
+1. Install the package:
 ```
-npm add ngx-hover-preload
+npm install --save ngx-hover-preload-v2
 ```
 
-Import the `HoverPreloadModule`  in your `AppModule` *AND* your lazy-loaded modules to ensure the required directives are available:
+2. Import the `HoverPreloadModule` into your `AppModule` **AND** your lazy-loaded modules to ensure the link hover directive is available:
 
 ```ts
 // ...
-import { HoverPreloadModule } from 'ngx-hover-preload';
+import { HoverPreloadModule } from 'ngx-hover-preload-v2';
 
 @NgModule({
   declarations: [
@@ -35,13 +39,11 @@ import { HoverPreloadModule } from 'ngx-hover-preload';
 export class AppModule { }
 ```
 
-**Make sure you import the `HoverPreloadModule` in all lazy-loaded modules in which you want to have this functionality available**
-
-Don't forget to set the `HoverPreloadStrategy` as your `preloadStrategy`:
+3. Set your `RouteModule` preload strategy to `HoverPreloadStrategy`:
 
 ```ts
 // ...
-import { HoverPreloadStrategy } from 'ngx-hover-preload';
+import { HoverPreloadStrategy } from 'ngx-hover-preload-v2';
 
 @NgModule({
   // ...

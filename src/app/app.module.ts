@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HoverPreloadModule, OnDemandPreloadService } from 'ngx-hover-preload-v2';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,9 +11,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HoverPreloadModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,21 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-hover-preload-2-demo": {
+    "ngx-hover-preload-v2-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "",
+      "root": "/",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-hover-preload-2-demo",
+            "outputPath": "dist/ngx-hover-preload-v2-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-hover-preload-2-demo:build:production"
+              "browserTarget": "ngx-hover-preload-v2-demo:build:production"
             },
             "development": {
-              "browserTarget": "ngx-hover-preload-2-demo:build:development"
+              "browserTarget": "ngx-hover-preload-v2-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-hover-preload-2-demo:build"
+            "browserTarget": "ngx-hover-preload-v2-demo:build"
           }
         },
         "test": {
@@ -99,6 +99,46 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "ngx-hover-preload-v2": {
+      "projectType": "library",
+      "root": "projects/ngx-hover-preload-v2",
+      "sourceRoot": "projects/ngx-hover-preload-v2/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-hover-preload-v2/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-hover-preload-v2/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-hover-preload-v2/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-hover-preload-v2/src/test.ts",
+            "tsConfig": "projects/ngx-hover-preload-v2/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-hover-preload-v2/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-hover-preload-v2/**/*.ts",
+              "projects/ngx-hover-preload-v2/**/*.html"
+            ]
           }
         }
       }

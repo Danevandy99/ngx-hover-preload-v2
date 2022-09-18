@@ -11,9 +11,9 @@ Example is available [here](https://github.com/mgechev/ngx-hover-preload/tree/ma
 
 ## Usage
 
-Install the module:
+Install the package:
 ```
-yarn add ngx-hover-preload
+npm add ngx-hover-preload
 ```
 
 Import the `HoverPreloadModule`  in your `AppModule` *AND* your lazy-loaded modules to ensure the required directives are available:

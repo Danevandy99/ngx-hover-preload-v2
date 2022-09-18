@@ -1,6 +1,33 @@
 {
   "name": "ngx-hover-preload-v2",
   "version": "0.0.1",
+  "description": "An Angular preloading strategy for loading routes on link hover",
+  "author": {
+    "name": "Dane Vanderbilt",
+    "email": "danevandy@hotmail.com",
+    "url": "https://danevanderbilt.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danevandy99/ngx-hover-preload-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Danevandy99/ngx-hover-preload-v2/issues"
+  },
+  "homepage": "https://github.com/Danevandy99/ngx-hover-preload-v2",
+  "keywords": [
+    "angular",
+    "typescript",
+    "router",
+    "route",
+    "preload",
+    "hover",
+    "strategy",
+    "directive",
+    "lazy",
+    "loading"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"

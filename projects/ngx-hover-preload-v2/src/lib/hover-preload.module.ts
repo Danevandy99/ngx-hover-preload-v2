@@ -1,4 +1,3 @@
-import { PreloadOnDemandService } from './preload-on-demand.service';
 import { NgModule } from '@angular/core';
 import { HoverPreloadStrategy } from './hover-preload.strategy';
 import { HoverPreloadLinkDirective } from './hover-preload-link.directive';

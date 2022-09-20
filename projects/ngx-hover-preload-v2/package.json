@@ -1,6 +1,6 @@
 {
   "name": "ngx-hover-preload-v2",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An Angular preloading strategy for loading routes on link hover",
   "author": {
     "name": "Dane Vanderbilt",

@@ -4,6 +4,7 @@
 
 [![Npm package version](https://badgen.net/npm/v/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
 [![Npm package license](https://badgen.net/npm/license/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
+[![Npm downloads total](https://badgen.net/npm/dt/ngx-hover-preload-v2)](https://npmjs.com/package/ngx-hover-preload-v2)
 
 [![GitHub latest commit](https://badgen.net/github/last-commit/Danevandy99/ngx-hover-preload-v2/main)](https://GitHub.com/Naereen/StrapDown.js/main/)
 
@@ -18,7 +19,7 @@ This package exports:
 
 ## Example
 
-[Example code available here](https://github.com/Danevandy99/ngx-hover-preload-v2/tree/main/src).
+[Example code available here](https://github.com/Danevandy99/ngx-hover-preload-v2/tree/main/src)
 
 [Example running here](https://ngx-hover-preload-v2.netlify.app/)
 
